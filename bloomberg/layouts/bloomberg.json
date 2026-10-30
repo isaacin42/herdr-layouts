@@ -1,0 +1,146 @@
+{
+  "id": "root",
+  "type": "column",
+  "children": [
+    {
+      "id": "cmdline",
+      "type": "block",
+      "content": {
+        "mod": "bloomberg",
+        "props": {
+          "role": "cmdline"
+        }
+      },
+      "size": {
+        "px": 34
+      },
+      "window_drag": true
+    },
+    {
+      "id": "tape",
+      "type": "block",
+      "content": {
+        "mod": "bloomberg",
+        "props": {
+          "role": "tape"
+        }
+      },
+      "size": {
+        "px": 20
+      },
+      "window_drag": true
+    },
+    {
+      "id": "desk",
+      "type": "row",
+      "children": [
+        {
+          "id": "main",
+          "type": "block",
+          "content": {
+            "tab": "active",
+            "pane": {
+              "header": {
+                "content": {
+                  "mod": "bloomberg",
+                  "props": {
+                    "role": "panel"
+                  }
+                },
+                "reveal": "always",
+                "height": 22,
+                "position": "top"
+              },
+              "background": "#000000",
+              "border": {
+                "width": 1,
+                "color": "#262626"
+              },
+              "focus": {
+                "width": 1,
+                "color": "#fb8b1e"
+              },
+              "radius": 0,
+              "gap": 3,
+              "lone": true
+            }
+          },
+          "padding": 3
+        },
+        {
+          "id": "monitor-col",
+          "type": "column",
+          "children": [
+            {
+              "id": "monitor",
+              "type": "block",
+              "content": {
+                "mod": "bloomberg",
+                "props": {
+                  "role": "monitor"
+                }
+              },
+              "size": {
+                "weight": 3
+              },
+              "min": 160
+            },
+            {
+              "id": "changes",
+              "type": "block",
+              "content": {
+                "mod": "changes"
+              },
+              "size": {
+                "weight": 2
+              },
+              "min": 120,
+              "hidden": true
+            }
+          ],
+          "size": {
+            "px": 400
+          },
+          "min": 300,
+          "max": 720,
+          "divider": {
+            "width": 1,
+            "color": "#4a2f12"
+          }
+        }
+      ],
+      "divider": {
+        "width": 1,
+        "color": "#4a2f12"
+      }
+    },
+    {
+      "id": "keys",
+      "type": "block",
+      "content": {
+        "mod": "bloomberg",
+        "props": {
+          "role": "keys"
+        }
+      },
+      "size": {
+        "px": 32
+      }
+    }
+  ],
+  "background": "#000000",
+  "theme": "bloomberg",
+  "font": "JetBrains Mono",
+  "font_size": 13,
+  "ui_font": "Departure Mono",
+  "terminal_padding": [
+    6,
+    10
+  ],
+  "titlebar": "none",
+  "traffic_lights": [
+    12,
+    11
+  ],
+  "preview": "layouts/bloomberg.svg"
+}

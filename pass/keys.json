@@ -1,0 +1,3 @@
+{
+  "layout:pass": { "cmd-g": "pass.fire", "cmd-shift-y": "pass.yes", "cmd-shift-h": "pass.hold", "cmd-shift-n": "pass.new", "cmd-]": "pass.next", "cmd-[": "pass.prev" }
+}

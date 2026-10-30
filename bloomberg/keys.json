@@ -1,0 +1,3 @@
+{
+  "layout:bloomberg": { "cmd-g": "bloomberg.go", "cmd-shift-g": "bloomberg.help" }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [14, 14],
+  "theme": "pass",
+  "preview": "layouts/pass.svg",
+  "background": "#121518",
+  "font": "JetBrains Mono",
+  "font_size": 13,
+  "ui_font": "Space Mono",
+  "terminal_padding": [8, 10],
+  "children": [
+    {
+      "id": "header",
+      "type": "block",
+      "size": { "px": 44 },
+      "window_drag": true,
+      "content": { "mod": "pass", "props": { "role": "header" } }
+    },
+    {
+      "id": "rail",
+      "type": "block",
+      "size": { "px": 172 },
+      "content": { "mod": "pass", "props": { "role": "rail" } }
+    },
+    {
+      "id": "service",
+      "type": "row",
+      "divider": { "width": 1, "color": "#3a4148" },
+      "children": [
+        {
+          "id": "main",
+          "type": "block",
+          "padding": 8,
+          "content": {
+            "tab": "active",
+            "pane": {
+              "gap": 8,
+              "radius": 4,
+              "background": "#15181b",
+              "lone": true,
+              "border": { "width": 1, "color": "#2a3036" },
+              "focus": { "width": 2, "color": "#ffb347" },
+              "header": {
+                "content": { "mod": "pass", "props": { "role": "station" } },
+                "height": 28,
+                "position": "top",
+                "reveal": "always"
+              }
+            }
+          }
+        },
+        {
+          "id": "expo",
+          "type": "block",
+          "size": { "px": 380 },
+          "min": 320,
+          "max": 560,
+          "content": { "mod": "pass", "props": { "role": "expo" } }
+        }
+      ]
+    }
+  ]
+}

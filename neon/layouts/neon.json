@@ -1,0 +1,60 @@
+{
+  "id": "root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [14, 14],
+  "theme": "neon",
+  "preview": "layouts/neon.svg",
+  "background": "#060407",
+  "font": "JetBrains Mono",
+  "font_size": 13,
+  "ui_font": "Tilt Neon",
+  "terminal_padding": [10, 12],
+  "children": [
+    {
+      "id": "wall",
+      "type": "block",
+      "size": { "weight": 0.8 },
+      "min": 180,
+      "window_drag": true,
+      "background": { "image": "mods/neon/art/brick.png", "fit": "cover" },
+      "content": { "mod": "neon", "props": { "role": "wall" } }
+    },
+    {
+      "id": "breakers",
+      "type": "block",
+      "size": { "px": 38 },
+      "content": { "mod": "neon", "props": { "role": "breakers" } }
+    },
+    {
+      "id": "storefront",
+      "type": "column",
+      "size": { "weight": 1.2 },
+      "padding": [10, 14],
+      "background": "#060407",
+      "children": [
+        {
+          "id": "main",
+          "type": "block",
+          "content": {
+            "tab": "active",
+            "pane": {
+              "gap": 10,
+              "radius": 10,
+              "background": "#0a080d",
+              "lone": true,
+              "border": { "width": 1, "color": "#2a2430" },
+              "focus": { "width": 1, "color": "#5a8cff" },
+              "header": {
+                "content": { "mod": "neon", "props": { "role": "plaque" } },
+                "height": 30,
+                "position": "top",
+                "reveal": "always"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

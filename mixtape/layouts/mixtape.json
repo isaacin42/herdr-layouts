@@ -1,0 +1,73 @@
+{
+  "id": "root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [14, 17],
+  "theme": "mixtape",
+  "preview": "layouts/mixtape.svg",
+  "background": "#26272b",
+  "font": "JetBrains Mono",
+  "font_size": 13,
+  "ui_font": "Gochi Hand",
+  "terminal_padding": [10, 12],
+  "children": [
+    {
+      "id": "flap",
+      "type": "block",
+      "size": { "px": 50 },
+      "window_drag": true,
+      "content": { "mod": "mixtape", "props": { "role": "flap" } }
+    },
+    {
+      "id": "body",
+      "type": "row",
+      "divider": { "width": 1, "color": "#3a3b40" },
+      "children": [
+        {
+          "id": "card",
+          "type": "row",
+          "size": { "px": 470 },
+          "min": 340,
+          "max": 760,
+          "resizable": false,
+          "background": "#fbfaf4",
+          "children": [
+            {
+              "id": "spine",
+              "type": "block",
+              "size": { "px": 40 },
+              "content": { "mod": "mixtape", "props": { "role": "spine" } }
+            },
+            {
+              "id": "sides",
+              "type": "block",
+              "content": { "mod": "mixtape", "props": { "role": "sides" } }
+            }
+          ]
+        },
+        {
+          "id": "deck",
+          "type": "block",
+          "padding": 10,
+          "content": {
+            "tab": "active",
+            "pane": {
+              "gap": 10,
+              "radius": 6,
+              "background": "background",
+              "lone": true,
+              "border": { "width": 1, "color": "#3a3b40" },
+              "focus": { "width": 2, "color": "#f6f1e3" },
+              "header": {
+                "content": { "mod": "mixtape", "props": { "role": "label" } },
+                "height": 28,
+                "position": "top",
+                "reveal": "always"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

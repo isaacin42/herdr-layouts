@@ -1,0 +1,3 @@
+{
+  "layout:mixtape": { "cmd-shift-f": "mixtape.flip", "cmd-shift-r": "mixtape.rec" }
+}

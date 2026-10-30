@@ -1,0 +1,59 @@
+{
+  "id": "root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [14, 15],
+  "theme": "orienteering",
+  "preview": "layouts/orienteering.svg",
+  "background": "#fbfaf6",
+  "font": "JetBrains Mono",
+  "font_size": 13,
+  "ui_font": "Barlow Condensed",
+  "terminal_padding": [8, 10],
+  "children": [
+    {
+      "id": "header",
+      "type": "block",
+      "size": { "px": 46 },
+      "window_drag": true,
+      "content": { "mod": "orienteering", "props": { "role": "header" } }
+    },
+    {
+      "id": "board",
+      "type": "block",
+      "size": { "weight": 1 },
+      "min": 240,
+      "content": { "mod": "orienteering", "props": { "role": "board" } }
+    },
+    {
+      "id": "rail",
+      "type": "block",
+      "size": { "px": 26 },
+      "content": { "mod": "orienteering", "props": { "role": "rail" } }
+    },
+    {
+      "id": "main",
+      "type": "block",
+      "size": { "weight": 1.15 },
+      "min": 200,
+      "padding": [8, 10],
+      "content": {
+        "tab": "active",
+        "pane": {
+          "gap": 8,
+          "radius": 0,
+          "background": "#ffffff",
+          "lone": true,
+          "border": { "width": 1, "color": "#1d1d1b" },
+          "focus": { "width": 2, "color": "#b0208e" },
+          "header": {
+            "content": { "mod": "orienteering", "props": { "role": "pane" } },
+            "height": 26,
+            "position": "top",
+            "reveal": "always"
+          }
+        }
+      }
+    }
+  ]
+}

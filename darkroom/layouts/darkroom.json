@@ -1,0 +1,53 @@
+{
+  "id": "root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [14, 14],
+  "theme": "darkroom",
+  "preview": "layouts/darkroom.svg",
+  "background": "#120a04",
+  "font": "JetBrains Mono",
+  "font_size": 13,
+  "ui_font": "Barlow Condensed",
+  "terminal_padding": [10, 12],
+  "children": [
+    {
+      "id": "bay",
+      "type": "block",
+      "size": { "px": 330 },
+      "min": 260,
+      "max": 520,
+      "content": { "mod": "darkroom", "props": { "role": "bay" } }
+    },
+    {
+      "id": "rail",
+      "type": "block",
+      "size": { "px": 34 },
+      "window_drag": true,
+      "content": { "mod": "darkroom", "props": { "role": "rail" } }
+    },
+    {
+      "id": "enlarger",
+      "type": "block",
+      "padding": [14, 22],
+      "background": "#0e0703",
+      "content": {
+        "tab": "active",
+        "pane": {
+          "gap": 14,
+          "radius": 2,
+          "background": "#140b05",
+          "lone": true,
+          "border": { "width": 6, "color": "#d9c7a3" },
+          "focus": { "width": 6, "color": "#ffb347" },
+          "header": {
+            "content": { "mod": "darkroom", "props": { "role": "pane" } },
+            "height": 28,
+            "position": "top",
+            "reveal": "always"
+          }
+        }
+      }
+    }
+  ]
+}
